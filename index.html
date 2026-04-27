@@ -597,7 +597,7 @@
                     document.getElementById('dp-name').innerText = data.name;
                     document.getElementById('dp-lith').innerText = data.lith;
                     document.getElementById('dp-role').innerText = data.role;
-                    document.getElementById('dp-depth').innerText = '~' + Math.round(Math.abs(data.topDepth) / scaleY) + ' m';
+                    document.getElementById('dp-depth').innerText = '~' + (Math.round(Math.abs(data.topDepth) / scaleY / 50) * 50) + ' m';
                 }
                 
                 dataPanel.style.display = 'block';
